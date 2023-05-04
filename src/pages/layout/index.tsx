@@ -15,9 +15,9 @@ const Layout = (props:Props) => {
             <div className="col-span-3">
                <SideBar/>
             </div>
-            <div className="col-span-6 overflow-scroll">
+            <div className="col-span-6">
                <ControlPanel/>
-               <div className="w-full mt-5 p-4 h-full shadow-sm rounded-lg bg-[#F5F5F5]">
+               <div className="w-full overflow-scroll mt-5 p-4 h-[400px] shadow-sm rounded-lg bg-[#F5F5F5]">
                  {props.children}
                </div>
             </div>
