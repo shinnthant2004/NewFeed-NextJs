@@ -13,7 +13,7 @@ const ControlPanel = () => {
           </div>
           <div className="flex justify-between items-center">
              <div className="flex items-center ">
-                <div className="flex w-[120px] h-[42px] rounded-full bg-blue-100 items-center">
+                 <div className="flex w-[120px] h-[42px] rounded-full bg-blue-100 items-center">
                     <div className="ml-2 w-[30px] h-[30px] rounded-full bg-blue-600 flex justify-center items-center">
                         <Gallery variant="Bold" color="white" size={20}/>
                     </div>
