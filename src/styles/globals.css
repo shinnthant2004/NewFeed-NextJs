@@ -26,3 +26,9 @@ body {
     rgb(var(--background-start-rgb)); */
     background-color: #E3E7EB;
 }
+
+::-webkit-scrollbar
+{
+  width: 0;
+  height: 8px;
+}
