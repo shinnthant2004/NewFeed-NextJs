@@ -32,7 +32,7 @@ const SideBar = () => {
                 <p className="text-[12px] pl-3 pt-2 text-gray-500 font-[500]">Shortcuts</p>
                 <div className="mt-2 grid grid-cols-12 rounded-full p-[6px]">
                     <div className="col-span-2 flex justify-center items-center w-[33px] h-[33px] rounded-full">
-                        <Award color="red" size={27}/>
+                        <Award color="blue" size={27}/>
                     </div>
                     <p className="col-span-7 mt-[6px] text-[13px] font-[400] ml-3 text-gray-500">UIUX designer</p>
 
