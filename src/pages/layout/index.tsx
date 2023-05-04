@@ -12,10 +12,10 @@ const Layout = (props:Props) => {
         <div className="w-screen h-screen">
             <Navbar/>
             <div className="grid w-full h-[85%] px-6 grid-cols-12 gap-4">
-            <div className="col-span-3">
+            <div className="col-span-2">
                <SideBar/>
             </div>
-            <div className="col-span-6">
+            <div className="col-span-7">
                <ControlPanel/>
                <div className="w-full overflow-scroll mt-5 p-4 h-[400px] shadow-sm rounded-lg bg-[#F5F5F5]">
                  {props.children}
