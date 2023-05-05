@@ -1,6 +1,20 @@
-import { EmojiHappy, Gallery, Menu, ProfileAdd, ProfileTick, ReceiptEdit } from "iconsax-react"
+import { EmojiHappy, Gallery, Menu, ProfileTick, ReceiptEdit } from "iconsax-react"
+import { useRef } from "react"
 
 const ControlPanel = () => {
+    const textField = useRef(null)
+
+    const handleSubmit = () => {
+      fetch('/api/posts',{
+        method:"GET",
+        headers: {
+            "Content-Type": "application/json",
+        },
+    }).then((res)=> res.json()).then((data)=>{
+      console.log(data,"da ta");
+    })
+    }
+
     return (
         <div className="w-full py-4 px-6 h-[215px] shadow-sm rounded-lg bg-[#F5F5F5]">
           <div className="flex items-center">
@@ -9,7 +23,7 @@ const ControlPanel = () => {
           </div>
           <div className="w-full relative py-[20px] pl-[65px] pr-[5px] my-5 h-[80px] rounded-lg border border-gray-300">
             <img className="absolute left-[15px] top-[14px] rounded-full" src="https://dummyimage.com/35x35/fff/000"/>
-            <textarea placeholder="What's on your mind, Sadbin?" className="w-full :placeholder:text-xs h-full bg-transparent text-sm focus:outline-none"/>
+            <textarea ref={textField} placeholder="What's on your mind, Sadbin?" className="w-full :placeholder:text-xs h-full bg-transparent text-sm focus:outline-none"/>
           </div>
           <div className="flex justify-between items-center">
              <div className="flex items-center ">
@@ -33,7 +47,8 @@ const ControlPanel = () => {
                   </div>
              </div>
              <div className="ml-2 w-[30px] h-[30px] rounded-full bg-gray-300 flex justify-center items-center">
-                <Menu variant="Outline" color="white" size={20}/>
+                {/* <Menu variant="Outline" color="white" size={20}/> */}
+                <button onClick={handleSubmit}>Post</button>
              </div>
           </div>
         </div>

@@ -19,9 +19,9 @@ const Blog = () => {
                <p className="text-xs font-[500] text-gray-400 leading-[25px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut temporibus aliquid excepturi adipisci odio quis. Fugit ipsa possimus, quam accusantium vero sint et repellat, reprehenderit nam autem quisquam, nostrum nisi.<span className="ml-3 text-xs font-[500] text-blue-600">See More</span></p>
             </div>
             <div className="flex justify-around items-center">
-                <img className="w-[230px] rounded-2xl object-cover h-[240px]" src="https://i.pinimg.com/564x/ce/ae/a7/ceaea7a53009ed0344f5b03c3af83abe.jpg"/>
-                <img  className="w-[230px] rounded-2xl object-cover h-[240px]"  src="https://i.pinimg.com/736x/ab/dd/15/abdd1523281087883d0fec95a22b9cf9.jpg"/>
-                <img   className="w-[230px] rounded-2xl object-cover h-[240px]"  src="https://i.pinimg.com/736x/c4/f6/87/c4f687b6762c36006b9fbcee1d3cd4a0.jpg"/>
+                <img className="w-[225px] rounded-2xl object-cover h-[240px]" src="https://i.pinimg.com/564x/ce/ae/a7/ceaea7a53009ed0344f5b03c3af83abe.jpg"/>
+                <img className="w-[225px] rounded-2xl object-cover h-[240px]"  src="https://i.pinimg.com/736x/ab/dd/15/abdd1523281087883d0fec95a22b9cf9.jpg"/>
+                <img className="w-[225px] rounded-2xl object-cover h-[240px]"  src="https://i.pinimg.com/736x/c4/f6/87/c4f687b6762c36006b9fbcee1d3cd4a0.jpg"/>
             </div>
             <div className="flex justify-between items-center">
                 <div className="flex h-[42px] rounded-full items-center">
