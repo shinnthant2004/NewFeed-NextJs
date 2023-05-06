@@ -1,11 +1,23 @@
+import { RootState, useAppDispatch, useAppSelector } from "@/store";
+import { getAllPosts } from "@/store/reducers/post.reducer";
+import { useEffect, useState } from "react";
 import Blog from "./components/Blog";
 
 export default function Home() {
+
+  const {posts} = useAppSelector((state:RootState)=>state.post.value)
+
   return (
     <div>
-     <Blog/>
-     <div className="w-full border-b border-gray-300 my-3"/>
-     <Blog/>
+     {/* {
+      posts?.map((item)=>{
+        return (
+          <div key={item._id}>
+            <p>{item.text}</p>
+          </div>
+        )
+      })
+     } */}
     </div>
   )
 }
